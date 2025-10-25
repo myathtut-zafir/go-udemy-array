@@ -8,7 +8,7 @@ type product struct {
 	price float64
 }
 
-func main() {
+func main2() {
 	hobbies := []string{"reading", "swimming", "coding"}
 	firstHobby := hobbies[0]
 	newHobbies := hobbies[1:3]
