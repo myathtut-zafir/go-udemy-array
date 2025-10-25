@@ -11,5 +11,5 @@ func main() {
 	featurePrices := prices[1:3]
 	featurePrices = prices[:3]
 	fmt.Println("Hello, World!", featurePrices)
-
+	fmt.Println("Hello, World!", len(featurePrices))
 }
