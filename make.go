@@ -19,7 +19,13 @@ func main() {
 	courseRatings["Math"] = 4.5
 	courseRatings["Science"] = 4.7
 	courseRatings["History"] = 4.3
-	
 	courseRatings.output()
+
+	for index, value := range userName {
+		fmt.Println("Index:", index, "Value:", value)
+	}
+	// for course, rating := range courseRatings {
+	// 	fmt.Printf("Course: %s, Rating: %.2f\n", course, rating)
+	// }
 
 }
