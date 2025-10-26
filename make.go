@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+type floatMap map[string]float64
+
+func (f floatMap) output() {
+	fmt.Println(f)
+
+}
+
+func main() {
+	userName := make([]string, 2, 5)
+	userName = append(userName, "Alice", "Bob", "Charlie")
+
+	fmt.Println(userName)
+	// courseRatings := make(map[string]float64, 3)
+	courseRatings := make(floatMap, 3)
+	courseRatings["Math"] = 4.5
+	courseRatings["Science"] = 4.7
+	courseRatings["History"] = 4.3
+	
+	courseRatings.output()
+
+}
