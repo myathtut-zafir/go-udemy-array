@@ -1,14 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
 // this is function as deep dive
 
 type transformFn func(int) int
 
 func main() {
 	numbers := []int{3, 2, 3, 4, 5}
-	newFunc := getTransformFn(&numbers)
-	double := transformNumber(&numbers, newFunc)
+	// newFunc := getTransformFn(&numbers)
+	double := transformNumber(&numbers, func(number int) int {
+		return number * 2
+	})
 
 	fmt.Println(double)
 }
