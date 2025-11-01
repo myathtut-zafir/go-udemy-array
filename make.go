@@ -9,7 +9,7 @@ func (f floatMap) output() {
 
 }
 
-func main() {
+func mainH() {
 	userName := make([]string, 2, 5)
 	userName = append(userName, "Alice", "Bob", "Charlie")
 
